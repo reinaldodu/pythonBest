@@ -5,7 +5,7 @@ class Lavadora:
     def lavar(self, temperatura='fria'):
         self._llenar_tanque(temperatura)
         self._anadir_jabon()
-        self._lavar() # Es diferente al método lavar (lavar -> público, _lavar -> privado)
+        self._lavar() # Es diferente al método lavar (lavar -> público, _lavar -> método protegido)
         self._centrifugar()
 
     def _llenar_tanque(self,temperatura):  #Método privado (inicia con _)
